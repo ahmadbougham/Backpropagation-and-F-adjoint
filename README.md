@@ -48,7 +48,7 @@ As a consequense, one may rewrite the backprpagation algorithm as follows:
    1.  Initialize $`W^\ell , \ell=1,\ldots,L`$
    2.  Function: $F$-propagation($x,W,\sigma$)
     
-        1.  Given $`X^0`$
+        1.  $`X^0\leftarrow x`$
         2.  $`F\leftarrow\{X^0\}`$
         3.  For $`\ell=1`$ to $L$:
                             
@@ -66,7 +66,7 @@ As a consequense, one may rewrite the backprpagation algorithm as follows:
         1. $`X_*^L\leftarrow \frac{\partial J}{\partial X^L}(X^L, y)`$        
         2. For $`\ell= L`$ to $1$:
                               
-            $`Y_*^\ell\leftarrow X^{\ell}\odot\sigma'(Y^\ell)`$
+            $`Y_*^\ell\leftarrow X_*^{\ell}\odot\sigma'(Y^\ell)`$
            
            $`X^{\ell-1}_{*} \leftarrow \displaystyle({W^{\ell}})^\top Y^\ell_{*}`$
            
