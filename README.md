@@ -11,7 +11,7 @@ Hereafter, we shall recall the background and notation used in the above referen
 # Background and Notations 
 We consider the simple case of a fully-connected deep multi-layer perceptron (MLP) composed of $L$ layers trained in a supervised setting. 
 We will denote such an architecture by $A[N_0, \cdots, N_\ell,\cdots, N_L]$, where $N_0$ is the size of the input layer, $N_\ell$ is the size of hidden layer $\ell$,
-and $N_L$ is the size of the output layer. 
+and $N_L$ is the size of the output layer; $L$ is defined as the depth of the  (MLP). 
 
 **Notations**
 
