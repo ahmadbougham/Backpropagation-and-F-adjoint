@@ -42,7 +42,7 @@ Before going further, let us point that in the above definition the prefix "F" s
 
 Let $X^0\in\mathbb{R}^{N_0}$ be a given data and let  $X^L_*\in\mathbb{R}^{N_L}$ be a given vector.  We define the F-adjoint propagation  $`{F}_{*}`$, through the (MLP) $`A[N_0,\cdots, N_L]`$, associated to the F-propagation  $`F(X^0)`$  as follows 
 ```math
-F_{*}(X^{0}, X^{L}_{*}):=\begin{Bmatrix}X^{L}_{*}, Y^{L}_{*}, X^{L-1}_{*},\cdots, X^{1}_{*},Y^{1}_{*}, X^{0}_{*} \end{Bmatrix}\  \mathrm{where}\  Y^\ell_{*}=X^{\ell}_{*}\odot {\sigma}'(Y^\ell), \ X^{\ell-1}_{*}=(W^\ell)^\top Y^\ell_{*},\ \ell=L,\cdots, 1.
+F_{*}(X^{0}, X^{L}_{*}):=\begin{Bmatrix}X^{L}_{*}, Y^{L}_{*}, X^{L-1}_{*},\cdots, X^{1}_{*},Y^{1}_{*}, X^{0}_{*} \end{Bmatrix}\  \mathrm{where}\  Y^\ell_{*}=X^{\ell}_{*}\odot {\sigma}'(Y^\ell), \ X^{\ell-1}_{*}=(W_\sharp^\ell)^\top Y^\ell_{*},\ \ell=L,\cdots, 1.
 ```
 The following Key lemma provide the link between backpropagation and $F$-adjoint propagation. More precisely, we have a simple formulas to comput gradient with respect to the weight $`W^\ell`$.
 
